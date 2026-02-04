@@ -29,9 +29,6 @@ brew "zsh-syntax-highlighting" # 命令语法高亮
 brew "fzf"                     # 模糊搜索神器 (Ctrl+R 找历史命令)
 
 # --- [5] 网络调试与测速 (Networking) ---
-brew "speedtest-cli" # 命令行一键测速
-brew "dog"           # 现代 DNS 查询 (取代 dig)
-cask "wireshark"     # 网络抓包分析
 cask "clash-verge-rev" # 代理工具
 
 # --- [6] AI 专属 IDE 与开发工具 ---
