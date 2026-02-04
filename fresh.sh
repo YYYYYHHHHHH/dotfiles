@@ -27,12 +27,13 @@ fi
 rm -rf $HOME/.zshrc
 ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+echo "begin brew upadet..."
 # Update Homebrew recipes
 brew update
-
+echo "begin brew install..."
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle --file ./Brewfile
-
+echo "brew install done"
 # Create a projects directories
 mkdir $HOME/Code
 mkdir $HOME/Herd
