@@ -32,7 +32,7 @@ echo "begin brew upadet..."
 brew update
 echo "begin brew install..."
 # Install all our dependencies with bundle (See Brewfile)
-brew bundle --file ./Brewfile
+brew bundle --file ./Brewfile --verbose
 echo "brew install done"
 # Create a projects directories
 mkdir $HOME/Code
