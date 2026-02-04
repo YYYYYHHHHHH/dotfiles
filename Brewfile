@@ -20,13 +20,13 @@ brew "python@3.11" # AI 库最兼容的 Python 版本
 brew "uv"          # 必装：目前全球最快的 Python 包/环境管理 (取代 pip)
 brew "ollama"      # 本地大模型运行引擎 (跑 DeepSeek 必备)
 cask "orbstack"    # 必装：比 Docker Desktop 轻量 10 倍，完全兼容 Docker
+cask "claude-code"
 
 # --- [4] 终端增强与皮肤 (Terminal Experience) ---
 brew "starship"                # 极速终端提示符 (颜值担当)
 brew "zsh-autosuggestions"     # 灰色历史命令补全
 brew "zsh-syntax-highlighting" # 命令语法高亮
 brew "fzf"                     # 模糊搜索神器 (Ctrl+R 找历史命令)
-cask "font-jetbrainsmono-nerd-font" # 必装：解决终端图标乱码
 
 # --- [5] 网络调试与测速 (Networking) ---
 brew "speedtest-cli" # 命令行一键测速
@@ -49,13 +49,14 @@ cask "cleanmymac"    # 系统清理
 cask "stats"         # 菜单栏实时显示网速、CPU、内存 (强烈推荐)
 cask "raycast"       # 替代 Spotlight 的神级工具，可集成 Claude/Gemini API
 
-# --- [9] 社交、媒体与生活 ---
-cask "wechat"
-
 # Apps
 cask 'discord'
-cask 'docker'
 cask 'github'
 cask 'google-chrome'
 cask 'tableplus'
+
+# appstore
+mas '微信', id: 836500024
+mas '网易云音乐', id: 944848654
+
 
