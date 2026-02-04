@@ -11,7 +11,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 
 # --- [2] 前端开发环境 (Frontend Stack) ---
-brew "nvm"         # Node.js 版本管理 (脚本会自动安装 v20+)
+brew "nvm"         # Node.js 版本管理
 brew "pnpm"        # 现代包管理工具
 brew "bun"         # 极速 JS 运行时 & 全栈工具
 brew 'yarn'
@@ -20,7 +20,6 @@ brew 'yarn'
 brew "python@3.11" # AI 库最兼容的 Python 版本
 brew "uv"          # 必装：目前全球最快的 Python 包/环境管理 (取代 pip)
 brew "ollama"      # 本地大模型运行引擎 (跑 DeepSeek 必备)
-brew "ffmpeg"      # 视频处理工具，AI 绘画/视频项目常需
 cask "orbstack"    # 必装：比 Docker Desktop 轻量 10 倍，完全兼容 Docker
 
 # --- [4] 终端增强与皮肤 (Terminal Experience) ---
@@ -33,7 +32,6 @@ cask "font-jetbrainsmono-nerd-font" # 必装：解决终端图标乱码
 # --- [5] 网络调试与测速 (Networking) ---
 brew "speedtest-cli" # 命令行一键测速
 brew "dog"           # 现代 DNS 查询 (取代 dig)
-brew "httpie"        # 比 curl 更友好的 HTTP 请求工具
 cask "wireshark"     # 网络抓包分析
 cask "clash-verge-rev" # 代理工具
 
@@ -45,63 +43,20 @@ cask "postman"       # 接口调试
 cask "balenaetcher"  # 启动盘制作工具
 
 # --- [7] 顶级终端 (Terminals) ---
-cask "warp"          # AI 集成的现代化终端 (你的主力)
+cask "iterm2"         
 
 # --- [8] 系统增强与清理 ---
 cask "cleanmymac"    # 系统清理
 cask "stats"         # 菜单栏实时显示网速、CPU、内存 (强烈推荐)
-cask "rectangle"     # 免费窗口分屏管理
 cask "raycast"       # 替代 Spotlight 的神级工具，可集成 Claude/Gemini API
 
 # --- [9] 社交、媒体与生活 ---
 cask "wechat"
 
 # Apps
-cask '1password'
-brew '1password-cli'
-cask 'caffeine'
-cask 'cyberduck'
 cask 'discord'
 cask 'docker'
-cask 'figma'
-cask 'firefox'
 cask 'github'
 cask 'google-chrome'
-cask 'helo'
-cask 'herd'
-cask 'httpie'
-cask 'imageoptim'
-cask 'loom'
-cask 'openclaw'
-cask 'pastebot'
-cask 'reflex'
-cask 'screen-studio'
-cask 'slack'
 cask 'tableplus'
-cask 'telegram-desktop'
-cask 'the-unarchiver'
-cask 'tinkerwell'
-cask 'transmit'
-cask 'tunnelbear'
-cask 'tuple'
-cask 'visual-studio-code'
-cask 'zoom'
 
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
-
-# Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
-# Mac App Store
-mas 'Keynote', id: 409183694
-mas 'MyWoosh', id: 1498889644
-mas 'Numbers', id: 409203825
-mas 'Speedtest', id: 1153157709
