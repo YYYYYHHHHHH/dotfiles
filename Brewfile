@@ -13,7 +13,6 @@ brew 'mas' # Mac App Store manager
 # --- [2] 前端开发环境 (Frontend Stack) ---
 brew "nvm"         # Node.js 版本管理
 brew "pnpm"        # 现代包管理工具
-brew "bun"         # 极速 JS 运行时 & 全栈工具
 brew 'yarn'
 
 # --- [3] AI & 后端开发 (AI Full-Stack) ---
