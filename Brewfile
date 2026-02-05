@@ -1,83 +1,57 @@
-# Taps
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'stripe/stripe-cli'
 
-# Binaries
-brew 'awscli'
-brew 'bash' # Latest Bash version
-brew 'bat' # Used for spatie/visit
-brew 'coreutils' # Those that come with macOS are outdated
-brew 'ffmpeg'
-brew 'gh'
-brew 'git'
-brew 'grep'
-brew 'httpie'
-brew 'jq' # Used for spatie/visit
+
+# --- [1] 核心命令行工具 (CLI Tools) ---
+brew "git"
+brew "gh"          # GitHub 命令行工具
+brew "jq"          # JSON 解析工具 (查 IP 命令必须)
+brew "curl"
 brew 'mackup'
 brew 'mas' # Mac App Store manager
-brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'stripe/stripe-cli/stripe'
-brew 'stripe/stripe-mock/stripe-mock'
-brew 'svn' # Needed to install fonts
 
-# Spatie Medialibrary
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngquant'
-brew 'svgo'
-brew 'gifsicle'
-
-# Development
-brew 'imagemagick'
+# --- [2] 前端开发环境 (Frontend Stack) ---
+brew "nvm"         # Node.js 版本管理
+brew "pnpm"        # 现代包管理工具
 brew 'yarn'
 
+# --- [3] AI & 后端开发 (AI Full-Stack) ---
+brew "python@3.11" # AI 库最兼容的 Python 版本
+brew "uv"          # 必装：目前全球最快的 Python 包/环境管理 (取代 pip)
+brew "ollama"      # 本地大模型运行引擎 (跑 DeepSeek 必备)
+cask "orbstack"    # 必装：比 Docker Desktop 轻量 10 倍，完全兼容 Docker
+cask "claude-code"
+
+# --- [4] 终端增强与皮肤 (Terminal Experience) ---
+brew "starship"                # 极速终端提示符 (颜值担当)
+brew "zsh-autosuggestions"     # 灰色历史命令补全
+brew "zsh-syntax-highlighting" # 命令语法高亮
+brew "fzf"                     # 模糊搜索神器 (Ctrl+R 找历史命令)
+
+# --- [5] 网络调试与测速 (Networking) ---
+cask "clash-verge-rev" # 代理工具
+
+# --- [6] AI 专属 IDE 与开发工具 ---
+cask "cursor"        # AI IDE 核心首选
+cask "trae"          # 字节跳动出品 AI IDE
+cask "visual-studio-code"
+cask "postman"       # 接口调试
+cask "balenaetcher"  # 启动盘制作工具
+
+# --- [7] 顶级终端 (Terminals) ---
+cask "iterm2"         
+
+# --- [8] 系统增强与清理 ---
+cask "cleanmymac"    # 系统清理
+cask "stats"         # 菜单栏实时显示网速、CPU、内存 (强烈推荐)
+cask "raycast"       # 替代 Spotlight 的神级工具，可集成 Claude/Gemini API
+
 # Apps
-cask '1password'
-brew '1password-cli'
-cask 'caffeine'
-cask 'cyberduck'
 cask 'discord'
-cask 'docker'
-cask 'figma'
-cask 'firefox'
 cask 'github'
 cask 'google-chrome'
-cask 'helo'
-cask 'herd'
-cask 'httpie'
-cask 'imageoptim'
-cask 'loom'
-cask 'openclaw'
-cask 'pastebot'
-cask 'reflex'
-cask 'screen-studio'
-cask 'slack'
 cask 'tableplus'
-cask 'telegram-desktop'
-cask 'the-unarchiver'
-cask 'tinkerwell'
-cask 'transmit'
-cask 'tunnelbear'
-cask 'tuple'
-cask 'visual-studio-code'
-cask 'zoom'
 
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
+# appstore
+mas '微信', id: 836500024
+mas '网易云音乐', id: 944848654
 
-# Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 
-# Mac App Store
-mas 'Keynote', id: 409183694
-mas 'MyWoosh', id: 1498889644
-mas 'Numbers', id: 409203825
-mas 'Speedtest', id: 1153157709
