@@ -1,6 +1,4 @@
-# Taps
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
+
 
 # --- [1] 核心命令行工具 (CLI Tools) ---
 brew "git"
