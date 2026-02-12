@@ -52,5 +52,5 @@ cask 'tableplus'
 # appstore
 mas '微信', id: 836500024
 mas '网易云音乐', id: 944848654
-mas 'iBar', 6443843900
+mas 'iBar', id: 6443843900
 
