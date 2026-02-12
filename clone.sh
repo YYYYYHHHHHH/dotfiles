@@ -7,6 +7,10 @@ SITES=$HOME/Herd
 BLADE=$CODE/blade-ui-kit
 LARAVEL=$CODE/laravel
 
+# ZSH
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # Sites
 # git clone git@github.com:blade-ui-kit/blade-ui-kit.com.git $SITES/blade-ui-kit.com
 

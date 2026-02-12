@@ -42,7 +42,6 @@ cask "iterm2"
 # --- [8] 系统增强与清理 ---
 cask "cleanmymac"    # 系统清理
 cask "stats"         # 菜单栏实时显示网速、CPU、内存 (强烈推荐)
-cask "raycast"       # 替代 Spotlight 的神级工具，可集成 Claude/Gemini API
 
 # Apps
 cask 'discord'
@@ -53,5 +52,5 @@ cask 'tableplus'
 # appstore
 mas '微信', id: 836500024
 mas '网易云音乐', id: 944848654
-
+mas 'iBar', 6443843900
 
